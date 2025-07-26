@@ -3,10 +3,10 @@ import asyncio
 from mcp import ClientSession
 from mcp.client.streamable_http import streamablehttp_client
 
-mcp_server_url = "http://localhost:8000"
+mcp_server_url = "http://localhost:8000/mcp"
 
 async def main():
-    async with streamablehttp_client(f"{mcp_server_url}/mcp") as (
+    async with streamablehttp_client(f"{mcp_server_url}") as (
         read_stream,
         write_stream,
         _,
