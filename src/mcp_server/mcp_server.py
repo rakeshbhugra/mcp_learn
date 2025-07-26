@@ -3,6 +3,7 @@ FastMCP quickstart example.
 
 uv run mcp dev src/mcp_server/mcp_server.py
 uv run --active mcp dev src/mcp_server/mcp_server.py 
+uv run --active mcp run src/mcp_server/mcp_server.py 
 """
 
 from mcp.server.fastmcp import FastMCP
